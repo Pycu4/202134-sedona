@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Кирилл Боровский](https://up.htmlacademy.ru/adaptive/11/user/202134).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Норцова](https://up.htmlacademy.ru/adaptive/11/user/143546).
 
 ---
 
