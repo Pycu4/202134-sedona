@@ -3,6 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <style>
+      .map__inner {
+        width: 320px;
+        height: 350px;
+       }
+    </style>
   </head>
   <body>
     <header class="page-header">
@@ -98,11 +104,29 @@
         <a class="button button__placement_promo" href="#" title="Перейти на страницу поиска гостиницы">Найти гостиницу</a>
       </section>
       <section class="map">
-
+        <div class="map__inner" id="map"></div>
       </section>
     </main>
     <footer class="page-footer">
 
-    </footer<
+    </footer>
+    <script>
+      function initMap() {
+        var sedona = {lat: 34.8543734, lng: -111.830158};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: sedona
+        });
+        var image = 'http://placehold.it/27x27';
+        var marker = new google.maps.Marker({
+          position: sedona,
+          map: map,
+          icon: image
+        });
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJZgm4qArrqk7xMG7vTMnU3sJVEmW32oQ&callback=initMap">
+    </script>
   </body>
 </html>
